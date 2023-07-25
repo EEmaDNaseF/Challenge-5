@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+:root {
+    --first-color : hsl(225, 100%, 94%) ;
+    --second-color : hsl(245, 75%, 52%) ;
+    --third-color :hsl(225, 100%, 98%) ;
+    --forth-color :hsl(224, 23%, 55%) ;
+    --fifth-color :hsl(223, 47%, 23%) ;
+
+}
+
+.container {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+.container .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+.container .img-top img  {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.container .card h2 {
+    margin: 15px 0;
+}
+.container .card .pp {
+    margin-bottom: 15px;
+    color: var(--forth-color);
+}
+.container .card .special {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--third-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin:10px auto;
+
+}
+.container .card .special .first {
+    display: flex;
+    align-items: center;
+}
+.container .card .special .first p {
+    margin-left: 8px;
+}
+
+.btn1 , .btn2{
+    width: 100%;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+}
+.btn1 {
+    background-color: var(--second-color);
+    color: white;
+
+}
+.btn2 {
+    background-color: white;
+
+}
+.container .card .special a:hover {
+    text-decoration: none;
+    color: var(--forth-color);
+}
